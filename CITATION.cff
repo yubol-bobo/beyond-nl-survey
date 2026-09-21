@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite the survey manuscript when referring to this work."
-type: article
+type: software
 title: "Beyond Natural-Language Interfaces: Decisions, Scores, and Predictive Distributions"
 authors:
   - family-names: Li
@@ -15,6 +15,21 @@ authors:
   - family-names: Padman
     given-names: Rema
     affiliation: Carnegie Mellon University
-date-released: 2026-09-21
+date-released: "2026-09-21"
 url: "https://yubol-bobo.github.io/beyond-nl-survey/"
 repository-code: "https://github.com/yubol-bobo/beyond-nl-survey"
+preferred-citation:
+  type: unpublished
+  title: "Beyond Natural-Language Interfaces: Decisions, Scores, and Predictive Distributions"
+  authors:
+    - family-names: Li
+      given-names: Yubo
+    - family-names: Miao
+      given-names: Yidi
+    - family-names: Krishnan
+      given-names: Ramayya
+    - family-names: Padman
+      given-names: Rema
+  year: 2026
+  notes: Survey manuscript
+  url: "https://yubol-bobo.github.io/beyond-nl-survey/"
