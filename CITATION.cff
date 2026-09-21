@@ -6,9 +6,6 @@ authors:
   - family-names: Li
     given-names: Yubo
     affiliation: Carnegie Mellon University
-  - family-names: Miao
-    given-names: Yidi
-    affiliation: Carnegie Mellon University
   - family-names: Krishnan
     given-names: Ramayya
     affiliation: Carnegie Mellon University
@@ -24,8 +21,6 @@ preferred-citation:
   authors:
     - family-names: Li
       given-names: Yubo
-    - family-names: Miao
-      given-names: Yidi
     - family-names: Krishnan
       given-names: Ramayya
     - family-names: Padman

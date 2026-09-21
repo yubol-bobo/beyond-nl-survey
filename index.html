@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#142b42">
-  <meta name="description" content="A survey of language-model predictive interfaces: decisions, scores, numerical estimates, and predictive distributions. By Yubo Li, Yidi Miao, Ramayya Krishnan, and Rema Padman, Carnegie Mellon University.">
+  <meta name="description" content="A survey of language-model predictive interfaces: decisions, scores, numerical estimates, and predictive distributions. By Yubo Li, Ramayya Krishnan, and Rema Padman, Carnegie Mellon University.">
   <meta property="og:title" content="Beyond Natural-Language Interfaces">
   <meta property="og:description" content="Decisions, Scores, and Predictive Distributions. A survey of what language models report, what those reports mean, and the decisions they support.">
   <meta property="og:type" content="website">
@@ -34,7 +34,7 @@
       <h1 id="page-title">Beyond Natural-Language<br class="desktop-break"> Interfaces</h1>
       <p class="subtitle">Decisions, Scores, and Predictive Distributions</p>
       <p class="hero-thesis">What should a language model report when another system<br class="desktop-break"> needs to make a decision?</p>
-      <p class="authors">Yubo&nbsp;Li <span>·</span> Yidi&nbsp;Miao <span>·</span> Ramayya&nbsp;Krishnan <span>·</span> Rema&nbsp;Padman</p>
+      <p class="authors">Yubo&nbsp;Li <span>·</span> Ramayya&nbsp;Krishnan <span>·</span> Rema&nbsp;Padman</p>
       <div class="hero-actions">
         <a class="button button-primary" href="pdf/beyond-natural-language-interfaces.pdf">Read the survey <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M5 15 15 5M5 5h10v10"/></svg></a>
         <a class="button button-outline repo-link" href="https://github.com/yubol-bobo/beyond-nl-survey"><svg aria-hidden="true" viewBox="0 0 24 24" class="github-icon"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.86c-2.78.61-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0 0 12 2Z"/></svg> GitHub</a>
@@ -66,7 +66,7 @@
           <article class="role distribution"><div class="role-top"><span class="role-letter">P</span><span>What uncertainty?</span></div><h3>Distributions &amp; summaries</h3><p>A predictive law, samples, or specified uncertainty summaries for a named target.</p><div class="role-mechanisms"><span>Representative routes</span><ul><li>Numerical-bin distributions</li><li>Quantile heads &amp; probes</li></ul></div><p class="role-example">Retain price quantiles for a tail-sensitive decision.</p></article>
         </div>
         <div class="composition"><span class="composition-code">C</span><h3>Structured composition</h3><p>A cross-cutting boundary: combine local reports into spans, fields, or constrained assignments.</p><span class="composition-tag">Across the four roles</span></div>
-        <div class="taxonomy-bottom"><p>Finite quantiles do not specify a full density. A teacher’s generation process and observed outcomes are different prediction targets.</p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=4">Taxonomy in the paper <span aria-hidden="true">↗</span></a></div>
+        <div class="taxonomy-bottom"><p>Finite quantiles do not specify a full density. A teacher’s generation process and observed outcomes are different prediction targets.</p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=5">Taxonomy in the paper <span aria-hidden="true">↗</span></a></div>
         <details class="taxonomy-details"><summary>View the full taxonomy <span class="expand-icon" aria-hidden="true">+</span></summary><figure><a href="assets/figures/taxonomy.svg" target="_blank" rel="noopener" aria-label="Open the full taxonomy figure at original size"><img src="assets/figures/taxonomy.svg" alt="Full taxonomy of decisions, scores, numerical estimates, distributions, and structured composition, with the seventeen production mechanisms and representative papers." loading="lazy" width="528" height="524"></a><figcaption>Figure 2 from the survey. Branches group report roles and mechanisms; they do not imply execution order or a ranking. <a href="assets/figures/taxonomy.svg" target="_blank" rel="noopener">Open at full size ↗</a></figcaption></figure></details>
       </div>
     </section>
@@ -80,7 +80,7 @@
       </div>
       <div class="evidence-panel" id="panel-computation" role="tabpanel" aria-labelledby="tab-computation" tabindex="0" hidden>
         <div class="evidence-heading"><div><h3>A compact report can hide extensive computation.</h3><p>A fitted probe moves teacher sampling offline. RELISH reuses one backbone encoding within a request. CAMEL reflects selectively. Other scalar interfaces aggregate repeated online generations.</p></div><a class="figure-link" href="assets/figures/computation-schedules.svg" target="_blank" rel="noopener">Open figure <span aria-hidden="true">↗</span></a></div>
-        <figure class="evidence-figure"><img src="assets/figures/computation-schedules.svg" alt="Four computation schedules contrast offline fitting, reused encoding, selective reflection, and repeated online generation. A separate latency plot distinguishes one median probe from numerical sampling in one documented configuration." loading="lazy" width="1441" height="819"><figcaption><span class="figure-caption-label">What this establishes</span> Count setup, request-time work, and refresh costs. The 0.034 s timing is for one median probe including encoding; it excludes teacher sampling and fitting. It is not a timing for the seven-quantile head or evidence about FLOPs or memory. <a href="pdf/beyond-natural-language-interfaces.pdf#page=15">Figure 6, with sources and caveats ↗</a></figcaption></figure>
+        <figure class="evidence-figure"><img src="assets/figures/computation-schedules.svg" alt="Four computation schedules contrast offline fitting, reused encoding, selective reflection, and repeated online generation. A separate latency plot distinguishes one median probe from numerical sampling in one documented configuration." loading="lazy" width="1441" height="819"><figcaption><span class="figure-caption-label">What this establishes</span> Count setup, request-time work, and refresh costs. The 0.034 s timing is for one median probe including encoding; it excludes teacher sampling and fitting. It is not a timing for the seven-quantile head or evidence about FLOPs or memory. <a href="pdf/beyond-natural-language-interfaces.pdf#page=16">Figure 6, with sources and caveats ↗</a></figcaption></figure>
       </div>
     </section>
 
@@ -94,17 +94,17 @@
         <tr><th scope="row">Answer uncertainty<br>or changing-loss queries</th><td>Required quantiles, a predictive law, or adequate retained samples.</td><td>Name the prediction target. Teacher uncertainty differs from outcome uncertainty; joint events need dependence information.</td></tr>
         <tr><th scope="row">Return a valid<br>structured object</th><td>A completed object, or local reports plus constraints.</td><td>Check legality and semantic quality separately. Include solver, parser, and assembly costs.</td></tr>
       </tbody></table></div>
-      <div class="table-note"><p>A guide to information requirements, not a ranking of estimators. Richer reports need not be more accurate or cheaper to estimate.</p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=43">Full selection guide <span aria-hidden="true">↗</span></a></div>
-      <div class="research-agenda"><span class="section-number">Looking forward</span><p>When losses, constraints, or teacher processes change,<br class="desktop-break"> <em>what must be revalidated?</em></p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=16">Read the research agenda <span aria-hidden="true">↗</span></a></div>
+      <div class="table-note"><p>A guide to information requirements, not a ranking of estimators. Richer reports need not be more accurate or cheaper to estimate.</p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=46">Full selection guide <span aria-hidden="true">↗</span></a></div>
+      <div class="research-agenda"><span class="section-number">Looking forward</span><p>When losses, constraints, or teacher processes change,<br class="desktop-break"> <em>what must be revalidated?</em></p><a class="text-link" href="pdf/beyond-natural-language-interfaces.pdf#page=17">Read the research agenda <span aria-hidden="true">↗</span></a></div>
     </div></section>
 
     <section class="section container resources" id="resources" aria-labelledby="resources-title">
-      <div><span class="section-number">05 / Paper &amp; resources</span><h2 id="resources-title">The complete survey.</h2><p class="resource-description">The full taxonomy, configuration-level comparisons, statistical foundations, and evidence-linked selection guide.</p><div class="resource-links"><a class="button button-primary" href="pdf/beyond-natural-language-interfaces.pdf" download>Download PDF <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M4 14v3h12v-3"/></svg></a><a class="text-link repo-link" href="https://github.com/yubol-bobo/beyond-nl-survey">Project repository <span aria-hidden="true">↗</span></a></div><p class="resource-meta">Survey manuscript · 55 pages · 21 September 2026</p></div>
+      <div><span class="section-number">05 / Paper &amp; resources</span><h2 id="resources-title">The complete survey.</h2><p class="resource-description">The full taxonomy, configuration-level comparisons, statistical foundations, and evidence-linked selection guide.</p><div class="resource-links"><a class="button button-primary" href="pdf/beyond-natural-language-interfaces.pdf" download>Download PDF <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2v11m-4-4 4 4 4-4M4 14v3h12v-3"/></svg></a><a class="text-link repo-link" href="https://github.com/yubol-bobo/beyond-nl-survey">Project repository <span aria-hidden="true">↗</span></a></div><p class="resource-meta">Survey manuscript · 59 pages · 21 September 2026</p></div>
       <div class="citation-box"><div class="citation-header"><h3>Cite this work</h3><button type="button" id="copy-citation" class="copy-button">Copy BibTeX</button></div><pre id="citation-text">@unpublished{li2026beyond,
   title = {Beyond Natural-Language Interfaces:
     Decisions, Scores, and Predictive Distributions},
-  author = {Li, Yubo and Miao, Yidi and
-    Krishnan, Ramayya and Padman, Rema},
+  author = {Li, Yubo and Krishnan, Ramayya and
+    Padman, Rema},
   year = {2026},
   note = {Survey manuscript},
   url = {https://yubol-bobo.github.io/beyond-nl-survey/}

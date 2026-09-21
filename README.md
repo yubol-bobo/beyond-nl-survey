@@ -2,14 +2,14 @@
 
 **Decisions, Scores, and Predictive Distributions**
 
-Yubo Li · Yidi Miao · Ramayya Krishnan · Rema Padman  
+Yubo Li · Ramayya Krishnan · Rema Padman<br>
 Carnegie Mellon University · 21 September 2026
 
 [Project website](https://yubol-bobo.github.io/beyond-nl-survey/) · [Read the survey](pdf/beyond-natural-language-interfaces.pdf) · [BibTeX](citation.bib)
 
 Language models increasingly supply the predictions on which other systems act. This survey connects decisions, scores, numerical estimates, and predictive distributions through the information a downstream decision actually requires.
 
-The project page presents the taxonomy, two representative evidence figures, and a compact interface-selection guide. The full 55-page manuscript contains the detailed comparisons, statistical foundations, references, and appendices.
+The project page presents the taxonomy, two representative evidence figures, and a compact interface-selection guide. The full 59-page manuscript contains the detailed comparisons, statistical foundations, references, and appendices.
 
 ## Repository
 
@@ -42,7 +42,7 @@ Figures are taken from the manuscript assets. The website computation diagram cl
 ```bibtex
 @unpublished{li2026beyond,
   title = {Beyond Natural-Language Interfaces: Decisions, Scores, and Predictive Distributions},
-  author = {Li, Yubo and Miao, Yidi and Krishnan, Ramayya and Padman, Rema},
+  author = {Li, Yubo and Krishnan, Ramayya and Padman, Rema},
   year = {2026},
   note = {Survey manuscript},
   url = {https://yubol-bobo.github.io/beyond-nl-survey/}
