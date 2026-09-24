@@ -5,7 +5,7 @@
 Yubo Li · Ramayya Krishnan · Rema Padman<br>
 Carnegie Mellon University · 21 September 2026
 
-[Project website](https://yubol-bobo.github.io/beyond-nl-survey/) · [Read the survey](pdf/beyond-natural-language-interfaces.pdf) · [BibTeX](citation.bib)
+[Project website](https://yubol-bobo.github.io/beyond-nl-survey/) · [Abstract](https://yubol-bobo.github.io/beyond-nl-survey/pdf/) · [Read the survey](pdf/beyond-natural-language-interfaces.pdf) · [BibTeX](citation.bib)
 
 Language models increasingly supply the predictions on which other systems act. This survey connects decisions, scores, numerical estimates, and predictive distributions through the information a downstream decision actually requires.
 
@@ -17,6 +17,8 @@ The project page presents the taxonomy, two representative evidence figures, and
 - `assets/styles.css` and `assets/site.js` — responsive styling and accessible evidence tabs/citation copying.
 - `assets/figures/` — the original taxonomy and two selected analytical figures.
 - `pdf/beyond-natural-language-interfaces.pdf` — complete survey, including all appendices. Appendices B and D use portrait tables.
+- `pdf/index.html` — visible full abstract and bibliographic metadata linking to the same-directory PDF.
+- `sitemap.xml` — project, abstract, and PDF URLs for submission through Google Search Console.
 - `citation.bib` and `CITATION.cff` — citation metadata for the survey manuscript.
 
 This repository intentionally contains the public project page, selected figures, and manuscript PDF, rather than the local working archive or downloaded source papers.
